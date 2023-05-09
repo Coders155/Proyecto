@@ -16,6 +16,7 @@ print("""
 -------------------------------------""")
 figura=int(input("Ingrese la figura:"))
 if figura==1:
+    #falta agregar los triangulos equilatero, cuadrilatero y isoseles
     limpiar_pantalla()
     print("""Ingresa sus medidas
 -------------------------------------- """)
@@ -46,10 +47,8 @@ elif figura==4:
     limpiar_pantalla()
     print("""Ingresa sus medidas
 -------------------------------------- """)
-    la1hex=int(input("Ingrese la medida del lado1:"))
-    la2hex=int(input("Ingrese la medida del lado2:"))
-    la3hex=int(input("Ingrese la medida del lado3:"))
-    la4hex=int(input("Ingrese la medida del lado4:"))
-    la5hex=int(input("Ingrese la medida del lado5:"))
-    la6hex=int(input("Ingrese la medida del lado6:"))
-    print("-------------------------------------- ")      
+    la1rombo=int(input("Ingrese la medida del lado 1:"))
+    la2rombo=int(input("Ingrese la medida del lado 2:"))
+    la3rombo=int(input("Ingrese la medida del lado 3:"))
+    la4rombo=int(input("Ingrese la medida del lado 4:"))
+    print("-------------------------------------- ")    
