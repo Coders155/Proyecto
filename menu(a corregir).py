@@ -22,6 +22,7 @@ print("""
 -------------------------------------""")
 figura=int(input("Ingrese la figura:"))
 if figura==1:
+    #falta agregar los triangulos equilatero, cuadrilatero y isoseles
     limpiar_pantalla()
     print("""Ingresa sus medidas
 -------------------------------------- """)
