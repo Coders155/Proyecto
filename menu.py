@@ -10,15 +10,9 @@ print("""
 |¿Que figura necesitas?             |
 -------------------------------------
 |1-Triangulo                        |
-|2-Cuadrado                         |
-|3-Rectangulo                       |
-|4-Rombo                            |
-|5-Romboide                         |
-|6-Trapecio                         |
-|7-Trapezoide                       |
-|8-Poligono                         |
-|9-Circulo                          |
-|10-Ovalo                           |
+|2-Cuadrilatero                     |
+|3-Pentagono                        |
+|4-Hexagono                         |
 -------------------------------------""")
 figura=int(input("Ingrese la figura:"))
 if figura==1:
@@ -33,21 +27,29 @@ elif figura==2:
     limpiar_pantalla()
     print("""Ingresa sus medidas
 -------------------------------------- """)
-    la1cua=int(input("Ingrese la medida de los lados:"))
+    la1cua=int(input("Ingrese la medida del lado1:"))
+    la2cua=int(input("Ingrese la medida del lado2:"))
+    la3cua=int(input("Ingrese la medida del lado3:"))
+    la4cua=int(input("Ingrese la medida del lado4:"))
     print("-------------------------------------- ")
 elif figura==3:
     limpiar_pantalla()
     print("""Ingresa sus medidas
 -------------------------------------- """)
-    altrec=int(input("Ingrese la altura:"))
-    anchrec=int(input("Ingrese el ancho:"))
+    la1pent=int(input("Ingrese la medida del lado1:"))
+    la2pent=int(input("Ingrese la medida del lado2:"))
+    la3pent=int(input("Ingrese la medida del lado3:"))
+    la4pent=int(input("Ingrese la medida del lado4:"))
+    la5pent=int(input("Ingrese la medida del lado5:"))
     print("-------------------------------------- ")
 elif figura==4:
     limpiar_pantalla()
     print("""Ingresa sus medidas
 -------------------------------------- """)
-    la1rombo=int(input("Ingrese la medida del lado 1:"))
-    la2rombo=int(input("Ingrese la medida del lado 2:"))
-    la3rombo=int(input("Ingrese la medida del lado 3:"))
-    la4rombo=int(input("Ingrese la medida del lado 4:"))
-    print("-------------------------------------- ")    
+    la1hex=int(input("Ingrese la medida del lado1:"))
+    la2hex=int(input("Ingrese la medida del lado2:"))
+    la3hex=int(input("Ingrese la medida del lado3:"))
+    la4hex=int(input("Ingrese la medida del lado4:"))
+    la5hex=int(input("Ingrese la medida del lado5:"))
+    la6hex=int(input("Ingrese la medida del lado6:"))
+    print("-------------------------------------- ")      
