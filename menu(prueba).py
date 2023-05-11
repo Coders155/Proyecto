@@ -109,17 +109,17 @@ while (opccion != "s"):
         limpiar_pantalla()
         print(
             """   
-        ----------------------------    
-        |          Menú            |
-         ----------------------------
-        |Tipos de Circulo u Ovalos |
-        ----------------------------
-        |1-Circulo         |          
-        |2-Ovoide          |
-        |3-Ovalo           |
-        |4.-opcion ant     |
-        | s-salir           |
-        ----------------------------
+        ---------------------------------    
+        |          Menú                 |
+         --------------------------------
+        |Tipos de Circulo u Ovalos      |
+        ---------------------------------
+        |1-Circulo                      |          
+        |2-Ovoide                       |
+        |3-Ovalo                        |
+        |4.-opcion ant                  |
+        |Presiona s + enter para salir  |
+        --------------------------------- 
         """
           )
         TOval=int(input("¿Cual tipo de Circulo u Ovalo necesitas? "))
