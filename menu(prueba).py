@@ -13,8 +13,7 @@ def limpiar_pantalla():
 opccion=""
 
 while (opccion != "s"):
-    print("""
-                    Menú
+    print("""        Menú
     -------------------------------------
     |¿Que figura necesitas?             |
     |-----------------------------------|
@@ -23,10 +22,10 @@ while (opccion != "s"):
     | 3-Pentagono                       |
     | 4-Hexagono                        |
     | 5-Circulos (Ovalos)               |
-    | Presiona s + enter para salir     |                  
+    | 10-salir                          |                  
     -------------------------------------""")
-    entrada=input("Ingresa la opción a elegir: ")
-    if entrada == "s":
+    entrada=int(input("Ingresa la opción a elegir: "))
+    if entrada == 10:
         break
     print("""-------------------------------------------------
     -------------------------------------------------"""
@@ -42,19 +41,20 @@ while (opccion != "s"):
         |1-Equilatero                   |
         |2-Escaleno                     |
         |3-Isosceles                    | 
-        |4-opcion ant                   |
-        |Presiona s + enter para salir  |
+        |4-opcion anterior              |
+        |10-salir                       |
         ---------------------------------
-        """
-          )
+        """)
         Ttriangulo=int(input("¿Cual tipo de triangulo necesitas? "))
+
+
+    limpiar_pantalla ()
+    if Ttriangulo == 10:
+        break
+    elif Ttriangulo == 1:
 
     ################################################################
      ################## TRIANGULO EQUILATERO    ##################
-
-    limpiar_pantalla ()
-    if entrada == 1:
-        if Ttriangulo == 1:
             print ("TRIANGULO EQUILATERO")
             a =int(input("Introduce el valor para todos los lados: "))
             fig, ax = plt.subplots()
@@ -70,10 +70,12 @@ while (opccion != "s"):
     ################################################################
      #################### TRIANGULO ESCALENO ######################
 
-        elif Ttriangulo == 2:
+    elif Ttriangulo == 2:
             print ("TRIANGULO EQUILATERO")
             ba = int (input("Inserte cm de Base: "))
             a = int (input("Inserte cm de Lado A: "))
+            if ba == "s" or a == "s":
+                break
             fig, ax = plt.subplots()
             plt.title ("TRIANGULO EQUILATERO")
             #El primero es para Este y Oeste
@@ -87,7 +89,7 @@ while (opccion != "s"):
     ################################################################
      ################### TRIANGULO ISOSELES ######################
 
-        elif Ttriangulo == 3:
+    elif Ttriangulo == 3:
             print ("TRIANGULO ISOSELES")
             a =int(input("Introduce el valor de la base (en cm): "))
             l = int(input("Introduce los valores de los lados (en cm): "))
@@ -107,8 +109,7 @@ while (opccion != "s"):
 
     if entrada==5:
         limpiar_pantalla()
-        print(
-            """   
+        print("""   
         ---------------------------------    
         |          Menú                 |
          --------------------------------
@@ -118,11 +119,12 @@ while (opccion != "s"):
         |2-Ovoide                       |
         |3-Ovalo                        |
         |4.-opcion ant                  |
-        |Presiona s + enter para salir  |
+        |10-salir                       |
         --------------------------------- 
-        """
-          )
+        """)
         TOval=int(input("¿Cual tipo de Circulo u Ovalo necesitas? "))
+        if TOval == 10:
+            break
 
     ################################################################
      ##################        CIRCULO          ##################
