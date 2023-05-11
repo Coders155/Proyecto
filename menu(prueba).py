@@ -46,13 +46,11 @@ while (opccion != "s"):
         ---------------------------------
         """)
         Ttriangulo=int(input("¿Cual tipo de triangulo necesitas? "))
-
-
-    limpiar_pantalla ()
-    if Ttriangulo == 10:
-        break
-    elif Ttriangulo == 1:
-
+        limpiar_pantalla ()
+        if Ttriangulo == 10:
+            break
+        elif Ttriangulo == 1:
+            
     ################################################################
      ################## TRIANGULO EQUILATERO    ##################
             print ("TRIANGULO EQUILATERO")
@@ -70,7 +68,7 @@ while (opccion != "s"):
     ################################################################
      #################### TRIANGULO ESCALENO ######################
 
-    elif Ttriangulo == 2:
+        elif Ttriangulo == 2:
             print ("TRIANGULO EQUILATERO")
             ba = int (input("Inserte cm de Base: "))
             a = int (input("Inserte cm de Lado A: "))
@@ -89,7 +87,7 @@ while (opccion != "s"):
     ################################################################
      ################### TRIANGULO ISOSELES ######################
 
-    elif Ttriangulo == 3:
+        elif Ttriangulo == 3:
             print ("TRIANGULO ISOSELES")
             a =int(input("Introduce el valor de la base (en cm): "))
             l = int(input("Introduce los valores de los lados (en cm): "))
@@ -168,5 +166,3 @@ while (opccion != "s"):
         ax.set_xlim((0, r*3))
         ax.set_ylim((0, r*3))
         plt.show()
-    ################################################################
-     ##################        Salida            ##################
